@@ -2,8 +2,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 import numpy as np
-from PIL import Image
-import base64
 
 with st.sidebar:
     page = option_menu(None, ["Notizie generali", "Calcola"], 
@@ -29,8 +27,8 @@ if page ==  "Notizie generali":
         ''')
 
     with right:
-        image = Image.open('Pythagoras.jpg')
-        st.image(image, caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
+        st.image('Pythagoras.jpg', caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
+        "---"
         st.image("Pythagoras-2a.gif", caption='Animazione di una dimostrazione')
       
 elif page == "Calcola":
