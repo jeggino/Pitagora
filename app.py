@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+from PIL import Image
 
 left, right = st.columns([2,1])
 
