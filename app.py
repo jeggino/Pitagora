@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 import base64
 
-st.sidebar:
+with st.sidebar:
     page = option_menu(None, ["Notizie generali", "Calcola"], 
                            icons=["bi bi-info-circle","bi-calculator"],default_index=0, orientation="vertical",menu_icon="cast")
     
