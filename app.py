@@ -26,9 +26,9 @@ if page ==  "Notizie generali":
         
     "---"
     
-    left_2, right_2 = st.columns([1,1.5])
+    left, right = st.columns([1,1.5])
     
-    with left_2:
+    with left:
         st.subheader("Enunciato")
         """In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti."""
 
@@ -40,7 +40,7 @@ if page ==  "Notizie generali":
         ipotenusa = \sqrt{a^2 + b^2}
         ''')
     
-    with right_2:
+    with right:
         st.image("Pythagoras-2a.gif", caption='Animazione di una dimostrazione')
       
 elif page == "Calcola":
