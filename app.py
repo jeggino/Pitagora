@@ -10,7 +10,7 @@ with left:
     st.caption("Quello che modernamente conosciamo come teorema di Pitagora viene solitamente attribuito al filosofo e matematico Pitagora. In realtà il suo enunciato (ma non la sua dimostrazione) era già noto ai Babilonesi. Viene a volte affermato che il teorema di Pitagora fosse noto agli antichi Egizi: Carl Boyer esclude questa ipotesi, basandosi sull'assenza del teorema dai papiri matematici rinvenuti. Era conosciuto anche in Cina e sicuramente in India, come dimostrano molte scritture fra cui lo Yuktibhāṣā e gli Śulbasūtra. Non sono note dimostrazioni del teorema considerate tutt'oggi valide e antecedenti o coeve a Pitagora.")
     st.subheader("Enunciato")
     st.caption("In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti.")
-    col1,col2 = st.columns(2)
+    col1, col2 = st.columns([1,1])
     with col1:
         st.latex(r'''
         ipotenusa^2 = a^2 + b^2
