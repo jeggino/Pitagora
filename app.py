@@ -1,10 +1,17 @@
 import streamlit as st
 import numpy as np
 
+left, right = st.columns([2,1])
 
-st.title('Il teorema di Pitagora')
+with left:
+    st.title('Il teorema di Pitagora')
 
-st.subheader("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo.")
+    st.subheader("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo.")
+    
+with right:
+    image = Image.open('Pythagoras.jpg')
+    st.image(image, caption=' Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
+    st.image
 
 st.latex(r'''
     ipotenusa = \sqrt{a^2 + b^2}
