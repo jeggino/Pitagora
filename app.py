@@ -6,8 +6,8 @@ left, right = st.columns([2,1])
 
 with left:
     st.title('Il teorema di Pitagora')
-    st.caption("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo. Quello che modernamente conosciamo come teorema di Pitagora viene solitamente attribuito al filosofo e matematico Pitagora. In realtà il suo enunciato (ma non la sua dimostrazione) era già noto ai Babilonesi. Viene a volte affermato che il teorema di Pitagora fosse noto agli antichi Egizi: Carl Boyer esclude questa ipotesi, basandosi sull'assenza del teorema dai papiri matematici rinvenuti. Era conosciuto anche in Cina e sicuramente in India, come dimostrano molte scritture fra cui lo Yuktibhāṣā e gli Śulbasūtra. Non sono note dimostrazioni del teorema considerate tutt'oggi valide e antecedenti o coeve a Pitagora.")
-    
+    st.caption("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo.")
+    st.caption("Quello che modernamente conosciamo come teorema di Pitagora viene solitamente attribuito al filosofo e matematico Pitagora. In realtà il suo enunciato (ma non la sua dimostrazione) era già noto ai Babilonesi. Viene a volte affermato che il teorema di Pitagora fosse noto agli antichi Egizi: Carl Boyer esclude questa ipotesi, basandosi sull'assenza del teorema dai papiri matematici rinvenuti. Era conosciuto anche in Cina e sicuramente in India, come dimostrano molte scritture fra cui lo Yuktibhāṣā e gli Śulbasūtra. Non sono note dimostrazioni del teorema considerate tutt'oggi valide e antecedenti o coeve a Pitagora.")
 with right:
     image = Image.open('Pythagoras.jpg')
     st.image(image, caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
