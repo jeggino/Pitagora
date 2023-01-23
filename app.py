@@ -47,6 +47,9 @@ else:
 
     cateto_2 = np.sqrt(ipotenusa**2 - cateto_1**2).round(2)
     
+    if cateto_1 > ipotenusa:
+        st.error("Per definizione il cateto non puó essere maggiore dell' ipotenusa!", icon="⛔")
+    
     st.text(f"Il cateto é uguale a {cateto_2}")
     
 
