@@ -31,7 +31,7 @@ with right:
 
 selected = option_menu(None, ["Calcola l'ipotenusa", 'Calcola il cateto'], icons=["bi bi-calculator","bi bi-calculator"],default_index=0, orientation="horizontal",menu_icon="cast")
 
-if selected == "Calcola l'ipotenusa"
+if selected == "Calcola l'ipotenusa":
     cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
     cateto_2 = st.number_input("Inserisci il valore del secondo cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
 
