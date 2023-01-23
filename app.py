@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
+import base64
 
 left, right = st.columns([2,1])
 
@@ -22,6 +23,12 @@ with left:
 with right:
     image = Image.open('Pythagoras.jpg')
     st.image(image, caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
+    
+    file_ = open("Pythagoras-2a.gif", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+    
     
 "---"
 
