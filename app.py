@@ -11,7 +11,7 @@ with st.sidebar:
 if page ==  "Notizie generali":  
     
     st.title('IL TEOREMA DI PITAGORA')
-    st.markdown()
+    st.markdown("")
     
     left, right = st.columns([1,2])
 
