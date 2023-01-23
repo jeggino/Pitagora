@@ -10,7 +10,7 @@ with left:
     
 with right:
     image = Image.open('Pythagoras.jpg')
-    st.image(image, caption=' Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
+    st.image(image, caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
     
 "---"
 
@@ -25,4 +25,4 @@ ipotenusa = np.sqrt(cateto_1**2 + cateto_2**2).round(2)
 
 
 
-st.text(f"L'ipotenusa é {ipotenusa}")
+st.text(f"L'ipotenusa é uguale a {ipotenusa}")
