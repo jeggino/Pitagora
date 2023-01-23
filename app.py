@@ -12,7 +12,7 @@ if page ==  "Notizie generali":
     
     st.title('IL TEOREMA DI PITAGORA')
     
-    left, right = st.columns([2,1])
+    left, right = st.columns([1,2])
 
     with right:
         
@@ -24,8 +24,10 @@ if page ==  "Notizie generali":
         st.image('Pythagoras.jpg', caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
         
     "---"
-        
-    with left:
+    
+    left_2, right_2 = st.columns([1,2])
+    
+    with left_2:
         st.subheader("Enunciato")
         """In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti."""
 
@@ -37,7 +39,7 @@ if page ==  "Notizie generali":
         ipotenusa = \sqrt{a^2 + b^2}
         ''')
     
-    with right:
+    with right_2:
         st.image("Pythagoras-2a.gif", caption='Animazione di una dimostrazione')
       
 elif page == "Calcola":
