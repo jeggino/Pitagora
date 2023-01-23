@@ -23,16 +23,17 @@ with left:
 with right:
     image = Image.open('Pythagoras.jpg')
     st.image(image, caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
+    st.image("Pythagoras-2a.gif", caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
     
-    file_ = open("Pythagoras-2a.gif", "rb")
-    contents = file_.read()
-    data_url = base64.b64encode(contents).decode("utf-8")
-    file_.close()
+#     file_ = open("Pythagoras-2a.gif", "rb")
+#     contents = file_.read()
+#     data_url = base64.b64encode(contents).decode("utf-8")
+#     file_.close()
     
-    st.markdown(
-        f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-        unsafe_allow_html=True,
-    )
+#     st.markdown(
+#         f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+#         unsafe_allow_html=True,
+#     )
     
     
 "---"
