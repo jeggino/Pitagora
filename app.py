@@ -4,6 +4,8 @@ import numpy as np
 
 st.title('Il teorema di Pitagora')
 
+st.subheader("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo.")
+
 st.latex(r'''
     ipotenusa = \sqrt{a^2 + b^2}
     ''')
