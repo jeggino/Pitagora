@@ -35,7 +35,7 @@ if page ==  "Notizie generali":
       
 elif page == "Calcola":
     
-    st.sidebar: 
+    with st.sidebar: 
         
         selected =st.radio("", ("Calcola l'ipotenusa","Calcola il cateto"), index=1)
     
