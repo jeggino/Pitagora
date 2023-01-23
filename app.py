@@ -29,12 +29,25 @@ with right:
     
 "---"
 
+selected = option_menu(None, ["Calcola l'ipotenusa", 'Calcola il cateto'], icons=["bi bi-calculator","bi bi-calculator"],default_index=0, orientation="horizontal",menu_icon="cast")
 
-cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
-cateto_2 = st.number_input("Inserisci il valore del secondo cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
+if selected == "Calcola l'ipotenusa"
+    cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
+    cateto_2 = st.number_input("Inserisci il valore del secondo cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
 
-ipotenusa = np.sqrt(cateto_1**2 + cateto_2**2).round(2)
+    ipotenusa = np.sqrt(cateto_1**2 + cateto_2**2).round(2)
+    
+    st.text(f"L'ipotenusa é uguale a {ipotenusa}")
+    
+else: 
+    cateto_1 = st.number_input("Inserisci il valore di un cateto", min_value=None, max_value=None, value=0,label_visibility="visible")
+    ipotenusa = st.number_input("Inserisci il valore dell' ipotenusa", min_value=None, max_value=None, value=0,label_visibility="visible")
+
+    cateto_2 = np.sqrt(ipotenusa**2 - cateto_1**2).round(2)
+    
+    st.text(f"Il cateto é uguale a {cateto_2}")
+    
 
 
 
-st.text(f"L'ipotenusa é uguale a {ipotenusa}")
+
