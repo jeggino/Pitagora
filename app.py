@@ -1,4 +1,6 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
+
 import numpy as np
 from PIL import Image
 import base64
