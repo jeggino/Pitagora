@@ -11,6 +11,8 @@ with left:
     st.subheader("Enunciato")
     st.caption("In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti.")
     
+    "---"
+    
     st.latex(r'''
     ipotenusa^2 = a^2 + b^2
     ''')
@@ -18,6 +20,7 @@ with left:
     st.latex(r'''
     ipotenusa = \sqrt{a^2 + b^2}
     ''')
+    
 with right:
     image = Image.open('Pythagoras.jpg')
     st.image(image, caption='Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
