@@ -6,7 +6,7 @@ left, right = st.columns([2,1])
 
 with left:
     st.title('Il teorema di Pitagora')
-    st.text("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo.")
+    st.caption("Il teorema di Pitagora è un teorema della geometria euclidea che stabilisce una relazione fondamentale tra i lati di un triangolo rettangolo.")
     
 with right:
     image = Image.open('Pythagoras.jpg')
