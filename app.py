@@ -34,8 +34,9 @@ if page ==  "Notizie generali":
         st.image("Pythagoras-2a.gif", caption='Animazione di una dimostrazione')
       
 elif page == "Calcola":
-    selected = option_menu(None, ["Calcola l'ipotenusa", "Calcola il cateto"], icons=["bi-calculator","bi-calculator"],default_index=0, orientation="horizontal",menu_icon="cast")
-
+    
+    selected =st.radio("", ("Calcola l'ipotenusa","Calcola il cateto"), index=1)
+    
     if selected == "Calcola l'ipotenusa":
         cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=0, max_value=None, value=0,label_visibility="visible")
         cateto_2 = st.number_input("Inserisci il valore del secondo cateto", min_value=0, max_value=None, value=0,label_visibility="visible")
