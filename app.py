@@ -25,7 +25,7 @@ if page ==  "Notizie generali":
         
     "---"
     
-    left_2, right_2 = st.columns([1,2])
+    left_2, right_2 = st.columns([1,1.5])
     
     with left_2:
         st.subheader("Enunciato")
