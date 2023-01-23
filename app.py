@@ -35,7 +35,9 @@ if page ==  "Notizie generali":
       
 elif page == "Calcola":
     
-    selected =st.radio("", ("Calcola l'ipotenusa","Calcola il cateto"), index=1)
+    st.sidebar: 
+        
+        selected =st.radio("", ("Calcola l'ipotenusa","Calcola il cateto"), index=1)
     
     if selected == "Calcola l'ipotenusa":
         cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=0, max_value=None, value=0,label_visibility="visible")
