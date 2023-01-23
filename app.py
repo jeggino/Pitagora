@@ -12,7 +12,6 @@ with left:
 with right:
     image = Image.open('Pythagoras.jpg')
     st.image(image, caption=' Samo, tra il 580 a.C. e il 570 a.C. – Metaponto, 495 a.C. circa')
-    st.image
 
 st.latex(r'''
     ipotenusa = \sqrt{a^2 + b^2}
