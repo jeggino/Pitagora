@@ -34,31 +34,38 @@ if page ==  "Notizie generali":
         st.image("Pythagoras-2a.gif", caption='Animazione di una dimostrazione')
       
 elif page == "Calcola":
-    st.image("8e8465a55cde531b2c2a038b1e16c090.jpg")
+    
     
     with st.sidebar: 
         
         selected =st.radio("", ("Calcola l'ipotenusa","Calcola il cateto"), index=1)
+        
+    left,right = st.columns([1,4])
     
-    if selected == "Calcola l'ipotenusa":
-        cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
-        cateto_2 = st.number_input("Inserisci il valore del secondo cateto", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
+    with left:
+        st.image("8e8465a55cde531b2c2a038b1e16c090.jpg")
+        
+    with right:
+    
+        if selected == "Calcola l'ipotenusa":
+            cateto_1 = st.number_input("Inserisci il valore del primo cateto", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
+            cateto_2 = st.number_input("Inserisci il valore del secondo cateto", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
 
-        ipotenusa = np.sqrt(cateto_1**2 + cateto_2**2).round(2)
+            ipotenusa = np.sqrt(cateto_1**2 + cateto_2**2).round(2)
 
-        st.text(f"L'ipotenusa é uguale a {ipotenusa}")
+            st.text(f"L'ipotenusa é uguale a {ipotenusa}")
 
-    else: 
-        cateto_1 = st.number_input("Inserisci il valore di un cateto", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
-        ipotenusa = st.number_input("Inserisci il valore dell' ipotenusa", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
+        else: 
+            cateto_1 = st.number_input("Inserisci il valore di un cateto", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
+            ipotenusa = st.number_input("Inserisci il valore dell' ipotenusa", min_value=0.0, max_value=None, value=0.0,label_visibility="visible")
 
-        cateto_2 = np.sqrt(ipotenusa**2 - cateto_1**2).round(2)
+            cateto_2 = np.sqrt(ipotenusa**2 - cateto_1**2).round(2)
 
-        if cateto_1 > ipotenusa:
-            st.error("Per definizione il cateto non puó essere maggiore dell' ipotenusa!", icon="⛔")
-            st.stop()
+            if cateto_1 > ipotenusa:
+                st.error("Per definizione il cateto non puó essere maggiore dell' ipotenusa!", icon="⛔")
+                st.stop()
 
-        st.text(f"Il cateto é uguale a {cateto_2}")
+            st.text(f"Il cateto é uguale a {cateto_2}")
     
 
 
