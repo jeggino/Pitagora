@@ -34,6 +34,7 @@ if page ==  "Notizie generali":
         st.image("Pythagoras-2a.gif", caption='Animazione di una dimostrazione')
       
 elif page == "Calcola":
+    st.image("8e8465a55cde531b2c2a038b1e16c090.jpg")
     
     with st.sidebar: 
         
